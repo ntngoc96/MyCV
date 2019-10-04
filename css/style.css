@@ -175,7 +175,7 @@ body {
 
 .database-skills {
   width: 80%;
-  margin: 2rem auto 1rem; }
+  margin: 1rem auto 1rem; }
   .database-skills__container {
     padding: 1rem 0;
     box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.15), -1px -3px 2px rgba(0, 0, 0, 0.15);
@@ -204,7 +204,8 @@ body {
     width: 50%; }
 
 .education {
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
   .education__timeline {
     padding-left: 1rem;
     position: relative; }
@@ -245,21 +246,20 @@ body {
       transform: translateX(5rem);
       transition: .4s; }
 
-.experiences__items {
-  margin-bottom: 1rem; }
-
-.experiences .items__information--heading {
-  font-size: 1.5rem;
-  font-weight: 900;
-  text-transform: uppercase; }
-
-.experiences .items__information--content .content__type span {
-  font-weight: bold; }
-
-.experiences .items__information--content .content__type ol {
-  padding-left: 2rem; }
-  .experiences .items__information--content .content__type ol li {
-    list-style-type: decimal; }
+.experiences {
+  margin: 0 auto; }
+  .experiences__items {
+    margin-bottom: 1rem; }
+  .experiences .items__information--heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase; }
+  .experiences .items__information--content .content__type span {
+    font-weight: bold; }
+  .experiences .items__information--content .content__type ol {
+    padding-left: 2rem; }
+    .experiences .items__information--content .content__type ol li {
+      list-style-type: decimal; }
 
 .frontend-skills {
   width: 100%; }
@@ -358,7 +358,7 @@ body {
 
 .programing-language-skills {
   width: 80%;
-  margin: 20rem auto 1rem; }
+  margin: 1rem auto 1rem; }
   .programing-language-skills__container {
     padding: 1rem 0;
     box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.15), -1px -3px 2px rgba(0, 0, 0, 0.15);
@@ -388,32 +388,41 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1.1fr 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1max-content 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1max-content; }
 
 .header {
   grid-area: 1 / 1 / 2 / 13; }
 
+.footer {
+  grid-area: 12 / 1 / 13 / 13; }
+
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-area: 2 / 1 / 8 / 13; }
+  grid-template-rows: 1max-content 1max-content 1max-content 1max-content 1max-content 1max-content 1max-content 1max-content;
+  grid-area: 2 / 1 / 12 / 13; }
 
 .frontend-skills {
-  grid-area: 1 / 1 / 3 / 8; }
+  grid-area: 1 / 1 / 3 / 7; }
 
 .backend-skills {
-  grid-area: 3 / 1 / 5 / 8; }
+  grid-area: 1 / 7 / 3 / 13; }
 
-.education {
-  grid-area: 1 / 8 / 5 / 13; }
+.programing-language-skills {
+  grid-area: 3 / 1 / 4 / 7; }
+
+.database-skills {
+  grid-area: 3 / 7 / 4 / 13; }
 
 .additional-skills {
-  grid-area: 5 / 1 / 7 / 8; }
+  grid-area: 4 / 4 / 5 / 10; }
+
+.education {
+  grid-area: 5 / 1 / 9 / 7; }
 
 .experiences {
-  grid-area: 5 / 8 / 7 / 13; }
+  grid-area: 5 / 7 / 9 / 13; }
 
 .header {
   display: flex;

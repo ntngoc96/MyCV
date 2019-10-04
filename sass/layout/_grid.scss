@@ -1,49 +1,30 @@
-// .grid-container {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-//   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-// }
-
-// .main {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-//   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-//   grid-area: 3 / 1 / 9 / 13;
-// }
-
-// .education { grid-area: 1 / 8 / 5 / 13; }
-
-// .language-skills { grid-area: 5 / 8 / 7 / 13; }
-
-// .frontend-skills { grid-area: 1 / 1 / 2 / 8; }
-
-// .backend-skills { grid-area: 3 / 1 / 5 / 8; }
-
-// .additional-skills { grid-area: 5 / 1 / 7 / 8; }
-
-// .header { grid-area: 1 / 1 / 2 / 13; }
-
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.1fr 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1max-content 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1max-content;
 }
 
 .header { grid-area: 1 / 1 / 2 / 13; }
 
+.footer { grid-area: 12 / 1 / 13 / 13; }
+
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-area: 2 / 1 / 8 / 13;
+  grid-template-rows: 1max-content 1max-content 1max-content 1max-content 1max-content 1max-content 1max-content 1max-content;
+  grid-area: 2 / 1 / 12 / 13;
 }
 
-.frontend-skills { grid-area: 1 / 1 / 3 / 8; }
+.frontend-skills { grid-area: 1 / 1 / 3 / 7; }
 
-.backend-skills { grid-area: 3 / 1 / 5 / 8; }
+.backend-skills { grid-area: 1 / 7 / 3 / 13; }
 
-.education { grid-area: 1 / 8 / 5 / 13; }
+.programing-language-skills { grid-area: 3 / 1 / 4 / 7; }
 
-.additional-skills { grid-area: 5 / 1 / 7 / 8; }
+.database-skills { grid-area: 3 / 7 / 4 / 13; }
 
-.experiences { grid-area: 5 / 8 / 7 / 13; }
+.additional-skills { grid-area: 4 / 4 / 5 / 10; }
+
+.education { grid-area: 5 / 1 / 9 / 7; }
+
+.experiences { grid-area: 5 / 7 / 9 / 13; }
