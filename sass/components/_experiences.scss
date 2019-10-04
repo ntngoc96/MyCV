@@ -1,0 +1,33 @@
+.experiences {
+  &__items {
+    margin-bottom: 1rem;
+  }
+
+  .items__information {
+    &--heading {
+      font-size: 1.5rem;
+      font-weight: 900;
+
+      text-transform: uppercase;
+
+
+    }
+
+    &--content {
+
+      .content__type {
+        span {
+          font-weight: bold;
+        }
+
+        ol {
+          padding-left: 2rem;
+
+          li {
+            list-style-type: decimal;
+          }
+        }
+      }
+    }
+  }
+}

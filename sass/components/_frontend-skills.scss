@@ -1,0 +1,146 @@
+.frontend-skills {
+  width: 100%;
+
+  // border:1px solid gray;  
+
+  .main__heading--text::after {
+    content: "";
+    width: 65%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+
+    border-top: 1px solid black;
+  }
+
+  &__list {
+
+    padding: 1rem 2rem;
+
+    text-align: center;
+
+  }
+
+  &__items {
+    display: inline-block;
+
+    & span {
+      width: 80px;
+      height: 80px;
+
+      @include d-flex-center();
+    }
+
+    &:not(:first-child){
+      margin-left:2rem;
+    }
+  }
+
+  .circular-chart:hover &__image-1{
+    transform:  translate(-52%, -65%) scale(1.2);
+  }
+  .circular-chart:hover &__image-2{
+    transform:  translate(-52%, -65%) scale(1.2);
+  }
+  .circular-chart:hover &__image-3{
+    transform:  translate(-52%, -65%) scale(1.2);
+  }
+  .circular-chart:hover &__image-4{
+    transform:  translate(-52%, -65%) scale(1.2);
+  }
+  .circular-chart:hover &__image-5{
+    transform:  translate(-68%, -76%) scale(1.2);
+  }
+  .circular-chart:hover &__image-6{
+    transform:  translate(-42%, -53%) scale(1.1) ;
+  }
+
+  &__image {
+    transition: 300ms;
+
+    &-1 {
+      transform:  translate(-34%, -40%);
+    }
+
+    &-2 {
+      transform: translate(-34%, -41%);
+    }
+
+    &-3 {
+      transform: translate(-35%, -41%);
+    }
+
+    &-4 {
+      transform: translate(-32%, -44%);
+    }
+
+    &-5 {
+      transform: translate(-50%,-55%);
+    }
+    &-6 {
+      transform: translate(-34%,-42%);
+    }
+  }
+
+  &__additional{
+    padding:1rem 3rem;
+
+    @include d-flex-center();
+    
+    &-items {
+      display: block;
+      & span{
+        width:80px;
+        height:80px;
+        
+        @include d-flex-center();
+      }
+      
+      & > div:nth-child(2) {
+        text-align: center;
+      }
+    }
+
+    & .c100{
+      margin-right:0;
+    }
+    &-text{
+      
+      text-transform: uppercase;
+      text-align: center;
+
+      font-weight: 700;
+
+    }
+  }
+
+}
+
+
+.circle{
+  &-1{
+    stroke: #f16524;
+  }
+  &-2{
+    stroke: #2965f1;
+  }
+  &-3{
+    stroke: #fedd24;
+  }
+  &-4{
+    stroke: #ce679a;
+  }
+  &-5{
+    stroke: #563d7c;
+  }
+  &-6{
+    stroke: #00ccff;
+  }
+  &-7{
+    stroke: $color-difficulty-7;
+  }
+  &-8{
+    stroke: $color-difficulty-8;
+  }
+}

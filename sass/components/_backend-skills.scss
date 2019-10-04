@@ -1,0 +1,211 @@
+.backend-skills {
+  position: relative;
+
+  .main__heading--text::after {
+    content: "";
+    width: 45%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+
+    border-top: 1px solid black;
+  }
+
+  &__list {
+    padding: 1rem 2rem;
+  }
+
+  // &__items--bar {
+  //   width: 70%;
+  //   height: .5rem;
+
+  //   border-radius: 3px;
+
+
+  //   &-2 {
+  //     background: repeating-linear-gradient(to right,
+  //         #ddd,
+  //         #ddd 2%,
+  //         transparent 2%,
+  //         transparent 2.5%),
+  //       repeating-linear-gradient(to right,
+  //         #6c7eb7,
+  //         #6c7eb7 4%,
+  //         transparent 4%,
+  //         transparent 5%);
+  //     background-size: 200%, 100%;
+  //     background-position: 0;
+  //     background-repeat: repeat-y;
+  //   }
+
+  //   &-1 {
+  //     background: repeating-linear-gradient(to right,
+  //         #ddd,
+  //         #ddd 2%,
+  //         transparent 2%,
+  //         transparent 2.5%),
+  //       repeating-linear-gradient(to right,
+  //         #6db64e,
+  //         #6db64e 4%,
+  //         transparent 4%,
+  //         transparent 5%);
+  //     background-size: 200%, 100%;
+  //     background-position: 0;
+  //     background-repeat: repeat-y;
+  //   }
+
+  //   &-3 {
+  //     background: repeating-linear-gradient(to right,
+  //         #ddd,
+  //         #ddd 2%,
+  //         transparent 2%,
+  //         transparent 2.5%),
+  //       repeating-linear-gradient(to right,
+  //         #f1941c,
+  //         #f1941c 4%,
+  //         transparent 4%,
+  //         transparent 5%);
+  //     background-size: 200%, 100%;
+  //     background-position: 0;
+  //     background-repeat: repeat-y;
+  //   }
+
+  //   &-4 {
+  //     background: repeating-linear-gradient(to right,
+  //         #ddd,
+  //         #ddd 2%,
+  //         transparent 2%,
+  //         transparent 2.5%),
+  //       repeating-linear-gradient(to right,
+  //         #01f8ee,
+  //         #01f8ee 4%,
+  //         transparent 4%,
+  //         transparent 5%);
+  //     background-size: 200%, 100%;
+  //     background-position: 0;
+  //     background-repeat: repeat-y;
+  //   }
+
+  //   &-5 {
+  //     background: repeating-linear-gradient(to right,
+  //         #ddd,
+  //         #ddd 2%,
+  //         transparent 2%,
+  //         transparent 2.5%),
+  //       repeating-linear-gradient(to right,
+  //         #4ea94b,
+  //         #4ea94b 4%,
+  //         transparent 4%,
+  //         transparent 5%);
+  //     background-size: 200%, 100%;
+  //     background-position: 0;
+  //     background-repeat: repeat-y;
+  //   }
+
+  //   &-6 {
+  //     background: repeating-linear-gradient(to right,
+  //         #ddd,
+  //         #ddd 2%,
+  //         transparent 2%,
+  //         transparent 2.5%),
+  //       repeating-linear-gradient(to right,
+  //         #ffcc2f,
+  //         #ffcc2f 4%,
+  //         transparent 4%,
+  //         transparent 5%);
+  //     background-size: 200%, 100%;
+  //     background-position: 0;
+  //     background-repeat: repeat-y;
+  //   }
+
+  // }
+
+  &__list {
+    position: relative;
+    top:22%;
+    
+    margin: 0 auto;
+
+    width: 5rem;
+    height: 5rem;
+
+
+    animation: rotate 15s infinite;
+
+  }
+
+  &__items {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+
+    animation: rotateRevert 15s ease 0s infinite;
+
+    &-1 {
+      left: 0rem;
+      top: -7rem;
+    }
+
+    &-2 {
+      left: -7rem;
+      top: -1.5rem;
+
+
+    }
+
+    &-3 {
+      left: 7rem;
+      top: -1.5rem;
+    }
+
+    &-4 {
+      left: -4rem;
+      top: 7rem;
+    }
+
+    &-5 {
+      left: 4rem;
+      top: 7rem;
+    }
+
+    &--img img {
+      width: 100%;
+
+    }
+
+    &-1 &--img img {
+      width: 90%;
+
+    }
+
+    &-2 &--img img {
+      width: 75%;
+
+    }
+    &-3 &--img img {
+      width: 80%;
+
+    }
+    &-4 &--img img {
+      width: 80%;
+
+    }
+    &-5 &--img img {
+      border-radius: 50%;
+
+    }
+
+    
+  }
+
+  &__label{
+    @include translate-center;
+    font-size:1.3rem;
+
+    text-transform: uppercase;
+
+    animation: rotateRevertCenter 15s ease 0s infinite;
+  }
+
+}

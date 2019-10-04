@@ -1,0 +1,91 @@
+.header{
+  display:flex;
+  flex-direction: row;
+
+  // max-height:18rem;
+
+  padding: 1rem 5rem;
+
+  background-color: #7860ff;
+  color:white;
+  &__avatar{
+
+    border-radius: 50%;
+
+    & img{
+      width:10rem;
+      height:10rem;
+
+      border:5px solid darkturquoise;
+      border-radius: 50%;
+    }
+  }
+
+  &__about-me{
+    flex-basis: 45%;
+    display:inline-block;
+
+    margin-left:2rem;
+
+  }
+
+  &__contact{
+    margin-left:2rem;
+  }
+
+}
+
+.about-me{
+  
+  &__name{
+    
+    text-transform: capitalize;
+    
+    font-weight: 900;
+    font-size:2rem;
+
+  }
+
+  &__job{
+    text-transform: uppercase;
+    
+    font-weight: 400;
+    font-size: 1.3rem;
+
+
+  }
+}
+
+.contact{
+  &__items:not(:last-child){
+    margin-bottom:1rem;
+  }
+
+  &__icons{
+    width:2rem;
+    height:2rem;
+
+    display:inline-block;
+
+    background-color: darkturquoise;
+    
+    border-radius: 50%;
+
+    & > i {
+      height:100%; 
+
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+
+  &__links{
+    margin-left:.75rem;
+
+    color:white;
+
+  }
+}

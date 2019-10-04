@@ -1,0 +1,12 @@
+@mixin d-flex-center {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin translate-center {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%)
+}

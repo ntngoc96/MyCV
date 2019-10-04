@@ -1,0 +1,82 @@
+.education {
+  position: relative;
+
+  &__timeline {
+    padding-left: 1rem;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      height: 100%;
+      width: 2px;
+
+      background-color: black;
+    }
+  }
+
+  &__menu--items{
+    position: relative;
+
+    &::before{
+      content:"";
+      position: absolute;
+      left:-1.3rem;
+      top:4%;
+
+      width:.8rem;
+      height:.8rem;
+
+      border-radius:50%;
+
+      background-color: dodgerblue;
+
+      box-shadow: 0 0 0 4px rgba(dodgerblue,.3)
+    }
+
+    &:hover .menu__items--child-menu{
+      opacity: 1;
+
+      transform: translateX(0);
+    }
+
+    .menu__items {
+      &--title {
+  
+        font-size: 1.5rem;
+        font-weight: 600;
+  
+        color: dodgerblue;
+      }
+  
+      &--time{
+        font-weight: 600;
+  
+        line-height: 1.2;
+      }
+      
+      &--child-menu{
+        padding:.5rem;
+        padding-left:1rem;
+
+        opacity:0;
+
+        transform: translateX(5rem);
+
+        transition: .4s;
+        
+      }
+    }
+
+  }
+
+  
+
+  
+
+
+}

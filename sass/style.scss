@@ -1,0 +1,26 @@
+@import "abstracts/extends";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "additional/circle";
+
+@import "base/base";
+@import "base/typography";
+@import "base/animation";
+@import "base/utilities";
+
+@import "components/additional-skills";
+@import "components/backend-skills";
+@import "components/database-skills";
+@import "components/education";
+@import "components/experiences";
+@import "components/frontend-skills";
+@import "components/programing-language-skill";
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+@import "pages/home";
