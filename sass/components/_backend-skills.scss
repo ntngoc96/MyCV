@@ -1,20 +1,35 @@
 .backend-skills {
   position: relative;
+  @include respond(phone){
+    margin-bottom: 15rem;
+  }
+
+  &__heading{
+    font-size:2.5rem;
+    font-weight:600;
+
+  }
 
   .main__heading--text::after {
     content: "";
-    width: 45%;
+    width: 55%;
     height: 3px;
     position: absolute;
     top: 50%;
-    right: 15%;
+    right: 5%;
 
     border-top: 1px solid black;
+
+    @include respond(tab-land){
+      width:45%;
+    }
+
+    @include respond(tab-port){
+      width:0;
+    }
   }
 
-  &__list {
-    padding: 1rem 2rem;
-  }
+  
 
   // &__items--bar {
   //   width: 70%;
@@ -120,18 +135,22 @@
   //   }
 
   // }
-
   &__list {
     position: relative;
     top:22%;
     
     margin: 0 auto;
+    padding: 1rem 2rem;
 
     width: 5rem;
     height: 5rem;
 
 
     animation: rotate 15s infinite;
+
+    @include respond(phone){
+      top:26%;
+    }
 
   }
 

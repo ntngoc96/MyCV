@@ -1,17 +1,33 @@
 .frontend-skills {
   width: 100%;
 
-  // border:1px solid gray;  
+  &__heading{
+    font-size:2.5rem;
+    font-weight:600;
+
+  }
+
+  .main__heading{
+    margin-bottom:1rem;
+  }
 
   .main__heading--text::after {
     content: "";
-    width: 65%;
+    width: 45%;
     height: 3px;
     position: absolute;
     top: 50%;
     right: 15%;
 
     border-top: 1px solid black;
+
+    @include respond(tab-land){
+      width:42%;
+      right:10%;
+    }
+    @include respond(tab-port){
+      width:0;
+    }
   }
 
   &__list {
@@ -34,6 +50,9 @@
 
     &:not(:first-child){
       margin-left:2rem;
+      @include respond(phone){
+        margin-left:0rem;
+      }
     }
   }
 

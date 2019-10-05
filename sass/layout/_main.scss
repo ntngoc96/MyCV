@@ -4,6 +4,8 @@
   &__heading {
     width: 100%;
 
+    margin-bottom:1rem;
+
     @include d-flex-center();
 
     font-weight: 900;
