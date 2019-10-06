@@ -221,14 +221,14 @@ body {
   position: relative;
   margin: 0 auto; }
   .education__heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600; }
     @media (max-width: 37.5em) {
       .education__heading {
         font-size: 2.3rem; } }
   .education .main__heading--text::after {
     content: "";
-    width: 35%;
+    width: 40%;
     height: 3px;
     position: absolute;
     top: 50%;
@@ -236,7 +236,7 @@ body {
     border-top: 1px solid black; }
     @media (max-width: 75em) {
       .education .main__heading--text::after {
-        width: 29%;
+        width: 35%;
         right: 10%; } }
     @media (max-width: 56.25em) {
       .education .main__heading--text::after {
@@ -283,7 +283,7 @@ body {
       opacity: 0;
       transform: translateX(5rem);
       transition: .4s; }
-      @media (max-width: 37.5em) {
+      @media (max-width: 56.25em) {
         .education__menu--items .menu__items--child-menu {
           padding-left: .25rem;
           opacity: 1;
@@ -292,14 +292,14 @@ body {
 .experiences {
   margin: 0 auto; }
   .experiences__heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600; }
     @media (max-width: 37.5em) {
       .experiences__heading {
         font-size: 2.3rem; } }
   .experiences .main__heading--text::after {
     content: "";
-    width: 35%;
+    width: 40%;
     height: 3px;
     position: absolute;
     top: 50%;
@@ -307,7 +307,7 @@ body {
     border-top: 1px solid black; }
     @media (max-width: 75em) {
       .experiences .main__heading--text::after {
-        width: 25%; } }
+        width: 30%; } }
     @media (max-width: 56.25em) {
       .experiences .main__heading--text::after {
         width: 0; } }
@@ -540,7 +540,10 @@ body {
     margin-left: 2rem;
     text-align: center; }
   .header__contact {
-    margin-left: 2rem; }
+    margin-left: 2rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center; }
 
 .about-me__name {
   text-transform: capitalize;
@@ -558,8 +561,21 @@ body {
 .contact__list {
   margin-top: 1rem; }
 
-.contact__items:not(:last-child) {
-  margin-bottom: 1rem; }
+.contact__items {
+  position: relative;
+  padding: .25rem;
+  background-image: linear-gradient(120deg, transparent, transparent 50%, white 0);
+  background-size: 220%;
+  transition: 400ms ease-in-out; }
+  .contact__items:not(:last-child) {
+    margin-bottom: 1rem; }
+  .contact__items:hover a {
+    color: #7860ff;
+    text-decoration: none; }
+  .contact__items:hover {
+    color: #7860ff;
+    background-position: 100%;
+    transform: translateX(0.5rem); }
 
 .contact__icons {
   width: 2rem;
@@ -599,3 +615,12 @@ body {
       margin-left: .75rem;
       position: relative;
       text-transform: capitalize; }
+
+.footer {
+  padding: 1rem;
+  background-color: #7860ff;
+  text-align: center;
+  color: white;
+  user-select: none; }
+  .footer span {
+    color: yellow; }

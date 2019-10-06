@@ -1,0 +1,15 @@
+.footer{
+  padding:1rem;
+  background-color: $primary-color;
+
+  text-align: center;
+  
+  color:white;
+
+  user-select: none;
+  & span{
+    color: yellow;
+  }
+  &__powered{
+  }
+}

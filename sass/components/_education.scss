@@ -5,7 +5,7 @@
   margin:0 auto;
 
   &__heading{
-    font-size:3rem;
+    font-size:2.5rem;
     font-weight:600;
 
     @include respond(phone){
@@ -15,7 +15,7 @@
 
   .main__heading--text::after {
     content: "";
-    width: 35%;
+    width: 40%;
     height: 3px;
     position: absolute;
     top: 50%;
@@ -24,7 +24,7 @@
     border-top: 1px solid black;
 
     @include respond(tab-land){
-      width:29%;
+      width:35%;
       right:10%;
     }
     @include respond(tab-port){
@@ -104,7 +104,7 @@
 
         transition: .4s;
 
-        @include respond(phone){
+        @include respond(tab-port){
           padding-left:.25rem;
           
           opacity:1;
