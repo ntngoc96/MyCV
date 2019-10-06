@@ -1,0 +1,142 @@
+.header{
+  display:flex;
+  flex-direction: row;
+
+  @include respond(tab-port){
+    flex-direction: column;
+  }
+  // max-height:18rem;
+
+  padding: 1rem 5rem;
+
+  @include respond(phone){
+    padding:.5rem 1rem;
+  }
+
+  background-color: #7860ff;
+  color:white;
+  &__avatar{
+
+    border-radius: 50%;
+    text-align: center;
+
+    & img{
+      width:10rem;
+      height:10rem;
+
+      border:5px solid darkturquoise;
+      border-radius: 50%;
+    }
+  }
+
+  &__about-me{
+    flex-basis: 45%;
+    display:inline-block;
+
+    margin-left:2rem;
+
+    text-align: center;
+
+
+
+  }
+
+  &__contact{
+    margin-left:2rem;
+
+    @include d-flex-center;
+  }
+
+}
+
+.about-me{
+  
+  &__name{
+    
+    text-transform: capitalize;
+    
+    font-weight: 900;
+    font-size:2rem;
+
+  }
+
+  &__job{
+    text-transform: uppercase;
+    
+    font-weight: 400;
+    font-size: 1.3rem;
+
+    
+  }
+
+  &__info{
+    text-align: left !important;
+  }
+}
+
+.contact{
+  &__list{
+    margin-top:1rem;
+  }
+
+
+  &__items{
+    position: relative;
+    padding:.25rem;
+
+    background-image: linear-gradient(120deg,transparent,transparent 50%,white 0);
+    background-size:220%;
+
+    transition:400ms ease-in-out;
+
+    &:not(:last-child){
+      margin-bottom:1rem;
+    }
+
+
+    &:hover a{
+      color: $primary-color;
+      text-decoration: none;
+    }
+
+    &:hover{
+      color: $primary-color;
+
+      background-position: 100%;
+
+      transform: translateX(.5rem)
+    }
+
+
+
+
+  }
+
+  &__icons{
+    width:2rem;
+    height:2rem;
+
+    display:inline-block;
+
+    background-color: darkturquoise;
+    
+    border-radius: 50%;
+
+    & > i {
+      height:100%; 
+
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+
+  &__links{
+    margin-left:.75rem;
+
+    color:white;
+
+  }
+}

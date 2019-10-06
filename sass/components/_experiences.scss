@@ -1,0 +1,65 @@
+.experiences {
+  // width:50%;
+  margin: 0 auto;
+
+
+  &__heading{
+    font-size:2.5rem;
+    font-weight:600;
+
+    @include respond(phone){
+      font-size:2.3rem;
+    }
+  }
+
+  .main__heading--text::after {
+    content: "";
+    width: 40%;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+
+    border-top: 1px solid black;
+    @include respond(tab-land){
+      width:30%;
+    }
+
+    @include respond(tab-port){
+      width:0;
+    }
+  }
+
+
+  &__items {
+    margin-bottom: 1rem;
+  }
+
+  .items__information {
+    &--heading {
+      font-size: 1.5rem;
+      font-weight: 900;
+
+      text-transform: uppercase;
+
+
+    }
+
+    &--content {
+
+      .content__type {
+        span {
+          font-weight: bold;
+        }
+
+        ol {
+          padding-left: 2rem;
+
+          li {
+            list-style-type: decimal;
+          }
+        }
+      }
+    }
+  }
+}

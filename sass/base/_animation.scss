@@ -1,0 +1,103 @@
+/* Backend-Skills */
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  6.67%,
+  20% {
+    transform: rotate(72deg);
+  }
+
+  26.67%,
+  40% {
+    transform: rotate(144deg);
+  }
+
+  46.67%,
+  60% {
+    transform: rotate(216deg);
+  }
+
+  66.67%,
+  80% {
+    transform: rotate(288deg);
+  }
+
+  86.67%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateRevert {
+
+  0% {
+
+    transform: rotate(360deg);
+  }
+
+  6.67%,
+  20% {
+
+    transform: rotate(288deg);
+  }
+
+  26.67%,
+  40% {
+    transform: rotate(216deg);
+
+  }
+
+  46.67%,
+  60% {
+    transform: rotate(144deg);
+  }
+
+  66.67%,
+  80% {
+    transform: rotate(72deg);
+  }
+
+  86.67%,
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes rotateRevertCenter {
+
+  0% {
+
+    transform: translate(-50%,-50%) rotate(360deg) ;
+  }
+
+  6.67%,
+  20% {
+
+    transform: translate(-50%,-50%) rotate(288deg)  ;
+  }
+
+  26.67%,
+  40% {
+    transform: translate(-50%,-50%) rotate(216deg)  ;
+
+  }
+
+  46.67%,
+  60% {
+    transform: translate(-50%,-50%) rotate(144deg)  ;
+  }
+
+  66.67%,
+  80% {
+    transform:translate(-50%,-50%)  rotate(72deg)  ;
+  }
+
+  86.67%,
+  100% {
+    transform:translate(-50%,-50%) rotate(0)  ;
+  }
+}
