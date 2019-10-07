@@ -33,7 +33,15 @@
 
   &__items {
     margin-bottom: 1rem;
+
+    .items__demo{
+      @include respond(phone){
+        width:90% !important;
+        margin: 0 auto;
+      }
+    }
   }
+
 
   .items__information {
     &--heading {

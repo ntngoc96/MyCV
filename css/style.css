@@ -313,6 +313,10 @@ body {
         width: 0; } }
   .experiences__items {
     margin-bottom: 1rem; }
+    @media (max-width: 37.5em) {
+      .experiences__items .items__demo {
+        width: 90% !important;
+        margin: 0 auto; } }
   .experiences .items__information--heading {
     font-size: 1.5rem;
     font-weight: 900;
